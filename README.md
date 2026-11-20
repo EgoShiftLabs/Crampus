@@ -1,6 +1,6 @@
-# CRAMPUS — Grinches in the Trenches 👹🎄
+# CRAMPUS — Ancient Demon. Modern Menace. 👹🎄
 
-Free, static GitHub Pages reconstruction of the CRAMPUS holiday website experience.
+Free, static GitHub Pages relaunch with cinematic Christmas character art and a viral Naughty List Audit.
 
 ## Migration status — November 20, 2026
 
@@ -14,11 +14,12 @@ The repository was empty except for its README before the current migration.
 
 ## Working functionality, without a backend
 
-- Responsive holiday landing page, lore, features, image gallery, FAQ and community links.
+- Custom asymmetric dark-holiday landing page, image billboard, dramatic character hero, North Pole dossier, comedy mosaic, evidence locker, FAQ and community links.
+- Interactive **Naughty List Audit**: enter a nickname to generate a funny charge, download a shareable 1080×1350 verdict PNG, copy it, or post to X. No personal data is stored by the site.
 - Snowfall and motion-aware effects.
 - 36 holiday posts in a client-side random tweet generator, with copy and X sharing.
 - Christmas 2026 countdown.
-- An image vault which displays recovered original images automatically when added.
+- An image vault and hero slots prepared for the four new founder-supplied assets; they are not in GitHub yet, so the site displays fallback visuals until uploaded.
 - No database, authentication, API keys, paid API, app server, wallet connection or signup process.
 
 ## Main files
@@ -26,7 +27,7 @@ The repository was empty except for its README before the current migration.
 - index.html — site structure, textual content, and illustrated hero placeholder.
 - styles.css — responsive visual identity.
 - script.js — local generator, navigation, timer, snow and image fallback.
-- assets/README.md — missing media filenames and recovery plan.
+- assets/README.md — exact four image filenames and deployment instructions.
 
 ## Publish on GitHub Pages
 
@@ -41,7 +42,7 @@ For a custom domain, verify you own it and then follow GitHub Pages domain setup
 
 ## Bring back the actual 2025 artwork and code
 
-Export/download a ZIP of the original Replit project. Inspect original files and assets before overwriting this working version. Copy the original artwork into the assets folder under the filenames listed there; preserve an unmodified archival backup. Prefer a separate recovery branch for original code, and compare any backend features before removing them.
+The founder supplied four regenerated character artworks from the CRAMPUS video; optimized WebP versions are packaged separately in the chat. **Upload the four images to assets/ manually**, using the exact filenames in assets/README.md. If the Replit source is ever recovered, preserve it as a separate archive and compare before merging.
 
 Do not commit .env, Replit secrets, credentials, wallet keys, or private user data. The visible features restored here do not need a backend.
 
