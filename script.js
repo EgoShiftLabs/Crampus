@@ -210,7 +210,7 @@
     return 'CRAMPUS NAUGHTY LIST AUDIT 👹🎄\nSUBJECT: ' + current.name +
       '\nCHARGE: ' + current.charge +
       '\n' + current.sentence +
-      '\n#CRAMPUS #GrinchesInTheTrenches';
+      '\n#CRAMPUS #GrinchesInTheTrenches\nhttps://egoshiftlabs.github.io/Crampus/#audit';
   }
   function audit() {
     var subject = cleanName();
