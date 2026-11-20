@@ -270,7 +270,7 @@
     var allSentences = inSeason ? sentences.concat(winterSentences) : sentences;
     var charge = allCharges[randomInt(allCharges.length)];
     var sentence = allSentences[randomInt(allSentences.length)];
-    var caseId = '1225-' + String(randomInt(90000) + 10000);
+    var caseId = 'CR-' + new Date().getFullYear() + '-' + String(randomInt(90000) + 10000);
     current = { name:subject, charge:charge, sentence:sentence, caseId:caseId };
     nameBox.textContent = subject.toUpperCase();
     caseBox.textContent = caseId;
