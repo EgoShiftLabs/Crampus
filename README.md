@@ -19,7 +19,7 @@ The repository was empty except for its README before the current migration.
 - Snowfall and motion-aware effects.
 - 36 holiday posts in a client-side random tweet generator, with copy and X sharing.
 - Christmas 2026 countdown.
-- An image vault and hero slots prepared for the four new founder-supplied assets; they are not in GitHub yet, so the site displays fallback visuals until uploaded.
+- An image vault and hero slots prepared for the four new founder-supplied assets; all five optimized images are now in GitHub and deployed via Pages.
 - No database, authentication, API keys, paid API, app server, wallet connection or signup process.
 
 ## Main files
@@ -42,7 +42,7 @@ For a custom domain, verify you own it and then follow GitHub Pages domain setup
 
 ## Bring back the actual 2025 artwork and code
 
-The founder supplied four regenerated character artworks from the CRAMPUS video; optimized WebP versions are packaged separately in the chat. **Upload the four images to assets/ manually**, using the exact filenames in assets/README.md. If the Replit source is ever recovered, preserve it as a separate archive and compare before merging.
+The founder supplied four regenerated character artworks from the CRAMPUS video; optimized WebP versions are packaged separately in the chat. The five optimized artwork images were uploaded successfully to `assets/` on November 20, 2026. No manual upload is needed. If the Replit source is ever recovered, preserve it as a separate archive and compare before merging.
 
 Do not commit .env, Replit secrets, credentials, wallet keys, or private user data. The visible features restored here do not need a backend.
 
