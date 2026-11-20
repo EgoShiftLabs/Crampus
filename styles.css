@@ -263,3 +263,14 @@ h1 em,h2 em{color:#e1af65}
 @media(max-width:1000px){.dossier-layout{gap:45px}.chaos-mosaic{grid-template-columns:1fr 1fr}.chaos-panel-main{grid-row:span 2}.chaos-panel-long{grid-column:span 2}.chaos-panel{min-height:230px}}
 @media(max-width:820px){.new-hero{grid-template-columns:1fr}.new-hero .hero-art{max-width:550px}.figure-shell{min-height:400px}.hero-figure-fallback{min-height:390px}.dossier-layout{grid-template-columns:1fr}.dossier-art{max-width:460px;margin:0 auto}.section-intro{align-items:start;flex-direction:column}.audit-form{grid-template-columns:1fr}.audit-form button{width:100%}.audit-form p{order:initial}.billboard-strip span:last-child{display:none}}
 @media(max-width:600px){.brand-billboard{min-height:100px}.brand-billboard-image{min-height:auto}.billboard-fallback{min-height:180px;height:180px}.billboard-strip{padding:10px 22px;font-size:8px}.new-hero h1{font-size:clamp(46px,11vw,68px)}.new-hero .hero-art{min-height:370px}.figure-shell{min-height:370px}.hero-figure-fallback{min-height:345px}.hero-figure-fallback span{font-size:110px}.hero-figure-fallback strong{font-size:23px}.dossier-section{padding-top:75px}.dossier-facts{grid-template-columns:1fr}.dossier-art{border-width:4px;box-shadow:9px 12px #4c2929}.chaos-mosaic{grid-template-columns:1fr}.chaos-panel-main{grid-row:auto;min-height:390px}.chaos-panel-long{grid-column:auto}.chaos-panel{min-height:240px}.chaos-panel-main h3{font-size:45px}.audit-workstation{box-shadow:5px 5px #4f262c}.audit-intro h2{font-size:clamp(43px,11vw,66px)}.verdict-card{min-height:450px;padding:25px 20px}.verdict-top{font-size:8px;letter-spacing:1px}.verdict-card h3{font-size:31px}.verdict-charge{font-size:19px}.gallery-new{grid-template-columns:1fr;grid-template-rows:430px 300px 380px}.gallery-new .gallery-main{grid-row:auto}.gallery-new .gallery-tile img{object-fit:contain}.audit-actions .button{flex:1 1 100%}}
+
+/* Render restored image assets directly rather than waiting for JS class toggles.
+   The five corresponding WebP assets are committed to the repository. */
+.brand-billboard .brand-billboard-image{display:block}
+.brand-billboard .billboard-fallback{display:none}
+.figure-shell .hero-figure-image{display:block}
+.figure-shell .hero-figure-fallback{display:none}
+.dossier-art img[data-asset]{display:block}
+.dossier-art .dossier-art-fallback{display:none}
+.gallery-new .gallery-tile img[data-asset]{display:block}
+.gallery-new .gallery-tile .missing-art{display:none}
