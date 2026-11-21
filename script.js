@@ -347,3 +347,29 @@
     status.textContent='CARD READY. GO PUT SOMEBODY ON BLAST. 😂';
   });
 })();
+
+/* Official CA quick-copy: no network calls, transactions, or wallet connections */
+(function () {
+  'use strict';
+  var btn=document.getElementById('copy-ca');
+  var code=document.getElementById('token-ca');
+  var note=document.getElementById('token-copy-feedback');
+  if(!btn||!code||!note)return;
+  btn.addEventListener('click',function(){
+    var value=code.textContent.trim();
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(value).then(function(){
+        note.textContent='CA COPIED. NOW YOU KNOW WHICH DEMON YOU LOOKING AT. 👹';
+        btn.textContent='COPIED ✓';
+      }).catch(function(){
+        note.textContent='LONG-PRESS THE ADDRESS ABOVE TO COPY IT.';
+      });
+    }else{
+      var selection=window.getSelection();
+      var range=document.createRange();
+      range.selectNodeContents(code);
+      selection.removeAllRanges();selection.addRange(range);
+      note.textContent='CA SELECTED. COPY IT FROM YOUR BROWSER.';
+    }
+  });
+})();
