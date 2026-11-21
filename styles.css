@@ -274,3 +274,17 @@ h1 em,h2 em{color:#e1af65}
 .dossier-art .dossier-art-fallback{display:none}
 .gallery-new .gallery-tile img[data-asset]{display:block}
 .gallery-new .gallery-tile .missing-art{display:none}
+
+/* CRAMPUS launch: contract presented as an on-brand public reference, no wallet interaction */
+.token-drop{padding:56px clamp(20px,7vw,120px) 68px;background:radial-gradient(ellipse at 80% 30%,#86323a3d,transparent 55%),linear-gradient(145deg,#261016,#101015);border-top:1px solid #b48b4e;border-bottom:1px solid #b48b4e;display:grid;grid-template-columns:.75fr 1.25fr;align-items:center;gap:clamp(25px,5vw,80px)}
+.token-drop-eyebrow,.token-ca-label{display:block;color:#eac17d;font-size:10px;letter-spacing:2px;font-weight:900;margin-bottom:12px}
+.token-drop h2{font-size:clamp(29px,3.4vw,53px);margin:0 0 16px;line-height:1.03;color:#ffe1ac}
+.token-drop h2 em{color:#f29a96}
+.token-drop-heading p{font-size:15px;color:#e1c3b6;margin:0;max-width:350px}
+.token-contract-panel{border:1px solid #b68c5c;background:#160c12;padding:clamp(18px,2.5vw,34px);box-shadow:8px 8px 0 #612b31}
+.token-ca{display:block;max-width:100%;overflow-wrap:anywhere;word-break:break-all;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:clamp(12px,1.3vw,17px);color:#fff2dd;background:#09080a;padding:15px 14px;border:1px solid #78513b;line-height:1.65;user-select:all}
+.token-ca-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:15px}
+.token-ca-actions .button{min-height:43px}
+.token-contract-panel p{font-size:11px;color:#cfb7a8;margin:13px 0 0}
+@media(max-width:870px){.token-drop{grid-template-columns:1fr;gap:24px}}
+@media(max-width:520px){.token-drop{padding:48px 22px}.token-ca-actions .button{width:100%}}
